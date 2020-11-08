@@ -3,10 +3,10 @@
 ## Prints
 
 ### Processed
-![Processed] (./prints/processed.png?raw=true)
+<img src="./prints/processed.png"/>
 
 ### Connection Error
-![ConnectionError] (./prints/connectionError.png?raw=true)
+<img src="./prints/connectionError.png"/>
 
 ### Invalid Coupon
-![InvalidCoupon] (./prints/invalidCoupon.png?raw=true)
+<img src="./prints/invalidCoupon.png"/>
