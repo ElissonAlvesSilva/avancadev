@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  microservice-a:
+    image: "323414/microservice-a"
+    ports:
+      - "9090:9090"
+  microservice-b:
+    image: "323414/microservice-b"
+    ports:
+      - "9091:9091"
+  microservice-c:
+    image: "323414/microservice-c"
+    ports:
+      - "9091:9091"
+  rabbit:
+    image: "rabbitmq:3-management"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQQKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "rabbitmq"
+      RABBITMQ_DEFAULT_PASS: "rabbitmq"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
